@@ -27,13 +27,13 @@ body {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  color: #05f4b7;
+  color: #ced7df;
 }
 
 .result-score {
   margin-left: .1rem;
   font-size: 4rem;
-  color: #05f4b7;
+  color: #ced7df;
 }
 
 .result-selection {
