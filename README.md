@@ -1,8 +1,7 @@
 Simple Rock Paper Scissors game
 
-Technologies;
+Technologies:
 HTML, CSS, Javascript
 
-Learning;
-
+Learning:
 DOM manipulation, Class organisation, Math methods
