@@ -27,6 +27,12 @@ selectionButtons.forEach(selectionButton => {
     })
 })
 
+// function gameOver(scoreSpan){
+//     if(scoreSpan == 10){
+//         alert("GG");
+//     }
+// }
+
 function makeSelection(selection) {
     const computerSelection = randomSelection()
     const yourWinner = isWinner(selection, computerSelection)
@@ -36,13 +42,12 @@ function makeSelection(selection) {
     addSelectionResult(selection, yourWinner)
 
     if (yourWinner) incrementScore(yourScoreSpan)
-    if (computerWinner) incrementScore(computerScoreSpan)    
+    if (computerWinner) incrementScore(computerScoreSpan)  
 }
 
 function incrementScore(scoreSpan) {
-    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
-}
-
+    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
+}   
 function addSelectionResult(selection, winner) {
     const div = document.createElement('div')
     div.innerText = selection.emoji
