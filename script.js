@@ -2,9 +2,10 @@ const selectionButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
 const computerScoreSpan = document.querySelector('[data-computer-score]')
 const yourScoreSpan = document.querySelector('[data-your-score]')
+ 
 const SELECTIONS = [{
         name: 'rock',
-        emoji: '🪨',
+        emoji: '🤘🏻',
         beats: 'scissors'
     },
     {
@@ -27,12 +28,6 @@ selectionButtons.forEach(selectionButton => {
     })
 })
 
-// function gameOver(scoreSpan){
-//     if(scoreSpan == 10){
-//         alert("GG");
-//     }
-// }
-
 function makeSelection(selection) {
     const computerSelection = randomSelection()
     const yourWinner = isWinner(selection, computerSelection)
@@ -47,6 +42,9 @@ function makeSelection(selection) {
 
 function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
+
+    if (scoreSpan == 5){
+        console.log('GG')}
 }   
 function addSelectionResult(selection, winner) {
     const div = document.createElement('div')
@@ -64,3 +62,4 @@ function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
     return SELECTIONS[randomIndex]
 }
+
