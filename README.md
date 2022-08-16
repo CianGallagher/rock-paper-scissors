@@ -1,4 +1,4 @@
-Simple Rock Paper Scissors game
+Simple Rock Paper Scissors game - https://ciangallagher.github.io/rock-paper-scissors/
 
 Technologies:
 HTML, CSS, Javascript
